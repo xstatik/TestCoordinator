@@ -18,7 +18,11 @@ using namespace std;
 	 * @version 01
 	 * @date 11/04/2018 Wade Davidson, added private member variables and pushed to git.
 	 *
-	 * @todo Everything
+	 * @author Wade Davidson
+	 * @version 02
+	 * @date 11/04/2018 Wade Davidson, added SetFirstName and GetFirstName. Tested. Added tesplan.
+	 *
+	 * @todo Setters and getters.
 	 *
 	 * @bug None yet....
 	 */
@@ -27,6 +31,22 @@ class Coordinator
 {
     public:
         Coordinator();
+            /**
+            * @brief Sets First Name of Coordinator
+            *
+            * @param  fnam parameter to copy first name from.
+            * @return void
+            * @post set m_firstName to fnam.
+            */
+        void SetFirstName(const string &fnam);
+            /**
+            * @brief Gets First Name of Coordinator
+            *
+            * @param  fnam parameter to copy first name to.
+            * @return void
+            * @post set fnam to m_firstName
+            */
+        void GetFirstName(string &fnam) const;
 
     private:
         string m_firstName;
