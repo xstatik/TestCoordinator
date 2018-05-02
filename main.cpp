@@ -8,6 +8,8 @@ void Test01();
 void Test02();
 void Test03();
 void Test04();
+void Test05();
+void Test06();
 
 int main()
 {
@@ -15,6 +17,8 @@ int main()
     Test02();
     Test03();
     Test04();
+    Test05();
+    Test06();
 
     return 0;
 }
@@ -61,6 +65,32 @@ void Test04()//Test SetRoom and GetRoom
 
     testCoord.SetRoom("LAB09");
     testCoord.GetRoom(testStr);
+
+    cout << testStr<< endl;
+}
+
+void Test05()//Test SetPhone and GetPhone
+{
+    cout << "----------TEST05----------" << endl;
+
+    Coordinator testCoord;
+    string testStr;
+
+    testCoord.SetPhone("+44157769505");
+    testCoord.GetPhone(testStr);
+
+    cout << testStr<< endl;
+}
+
+void Test06()//Test SetEmail and GetEmail
+{
+    cout << "----------TEST06----------" << endl;
+
+    Coordinator testCoord;
+    string testStr;
+
+    testCoord.SetEmail("monkey@bananas.com");
+    testCoord.GetEmail(testStr);
 
     cout << testStr<< endl;
 }

@@ -33,3 +33,23 @@ void Coordinator::GetRoom(string &room) const
 {
     room = m_roomNo;
 }
+
+void Coordinator::SetPhone(const string &phone)
+{
+    m_phoneNo = phone;
+}
+
+void Coordinator::GetPhone(string &phone) const
+{
+    phone = m_phoneNo;
+}
+
+void Coordinator::SetEmail(const string &email)
+{
+    m_emailAddress = email;
+}
+
+void Coordinator::GetEmail(string &email) const
+{
+    email = m_emailAddress;
+}

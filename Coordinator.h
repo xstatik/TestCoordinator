@@ -30,6 +30,14 @@ using namespace std;
 	 * @version 04
 	 * @date 02/05/2018 Wade Davidson, added SetRoom and GetRoom. Tested.
 	 *
+	 * @author Wade Davidson
+	 * @version 05
+	 * @date 02/05/2018 Wade Davidson, added SetPhone and GetPhone. Tested.
+	 *
+	 * @author Wade Davidson
+	 * @version 06
+	 * @date 02/05/2018 Wade Davidson, added SetEmail and GetEmail. Tested.
+	 *
 	 * @todo Setters and getters.
 	 *
 	 * @bug None yet....
@@ -86,7 +94,39 @@ class Coordinator
             * @return void
             * @post return room number.
             */
-        void GetRoom(string &lnam) const;
+        void GetRoom(string &room) const;
+            /**
+            * @brief Sets phone number of the Coordinator
+            *
+            * @param  phone phone number of the coordinator.
+            * @return void
+            * @post set phone number.
+            */
+        void SetPhone(const string &phone);
+            /**
+            * @brief Gets phone number of the Coordinator
+            *
+            * @param  phone phone number of the coordinator.
+            * @return void
+            * @post return phone number.
+            */
+        void GetPhone(string &email) const;
+            /**
+            * @brief Sets email address of the Coordinator
+            *
+            * @param  email email address of the coordinator.
+            * @return void
+            * @post set email address.
+            */
+        void SetEmail(const string &email);
+            /**
+            * @brief Gets email address of the Coordinator
+            *
+            * @param  email email address of the coordinator.
+            * @return void
+            * @post return email address.
+            */
+        void GetEmail(string &email) const;
 
     private:
         string m_firstName;
