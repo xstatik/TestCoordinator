@@ -7,12 +7,14 @@ using namespace std;
 void Test01();
 void Test02();
 void Test03();
+void Test04();
 
 int main()
 {
     Test01();
     Test02();
     Test03();
+    Test04();
 
     return 0;
 }
@@ -46,6 +48,19 @@ void Test03()//Test SetLastName and GetLastName
 
     testCoord.SetLastName("the Bunny");
     testCoord.GetLastName(testStr);
+
+    cout << testStr<< endl;
+}
+
+void Test04()//Test SetRoom and GetRoom
+{
+    cout << "----------TEST04----------" << endl;
+
+    Coordinator testCoord;
+    string testStr;
+
+    testCoord.SetRoom("LAB09");
+    testCoord.GetRoom(testStr);
 
     cout << testStr<< endl;
 }

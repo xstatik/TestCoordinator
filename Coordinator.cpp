@@ -23,3 +23,13 @@ void Coordinator::GetLastName(string &lnam) const
 {
     lnam = m_lastName;
 }
+
+void Coordinator::SetRoom(const string &room)
+{
+    m_roomNo = room;
+}
+
+void Coordinator::GetRoom(string &room) const
+{
+    room = m_roomNo;
+}

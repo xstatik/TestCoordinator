@@ -24,7 +24,11 @@ using namespace std;
 	 *
 	 * @author Wade Davidson
 	 * @version 03
-	 * @date 02/05/2018 Wade Davidson, added SetLastName and GetLastName. Tested. Added tesplan.
+	 * @date 02/05/2018 Wade Davidson, added SetLastName and GetLastName. Tested.
+	 *
+	 * @author Wade Davidson
+	 * @version 04
+	 * @date 02/05/2018 Wade Davidson, added SetRoom and GetRoom. Tested.
 	 *
 	 * @todo Setters and getters.
 	 *
@@ -67,6 +71,22 @@ class Coordinator
             * @post set last name.
             */
         void GetFirstName(string &lnam) const;
+            /**
+            * @brief Sets room number of the Coordinator
+            *
+            * @param  room room number of the coordinator.
+            * @return void
+            * @post set room number.
+            */
+        void SetRoom(const string &room);
+            /**
+            * @brief Gets room number of the Coordinator
+            *
+            * @param  room room number of the coordinator.
+            * @return void
+            * @post return room number.
+            */
+        void GetRoom(string &lnam) const;
 
     private:
         string m_firstName;
