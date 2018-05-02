@@ -22,6 +22,10 @@ using namespace std;
 	 * @version 02
 	 * @date 11/04/2018 Wade Davidson, added SetFirstName and GetFirstName. Tested. Added tesplan.
 	 *
+	 * @author Wade Davidson
+	 * @version 03
+	 * @date 02/05/2018 Wade Davidson, added SetLastName and GetLastName. Tested. Added tesplan.
+	 *
 	 * @todo Setters and getters.
 	 *
 	 * @bug None yet....
@@ -46,7 +50,23 @@ class Coordinator
             * @return void
             * @post set fnam to m_firstName
             */
-        void GetFirstName(string &fnam) const;
+        void GetLastName(string &lnam) const;
+            /**
+            * @brief Sets Last name of Coordinator
+            *
+            * @param  lnam last name of coordinator.
+            * @return void
+            * @post set last name.
+            */
+        void SetLastName(const string &lnam);
+            /**
+            * @brief Gets last name of the Coordinator
+            *
+            * @param  lnam last name of coordinator.
+            * @return void
+            * @post set last name.
+            */
+        void GetFirstName(string &lnam) const;
 
     private:
         string m_firstName;

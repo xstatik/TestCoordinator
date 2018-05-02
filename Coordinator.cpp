@@ -1,13 +1,8 @@
 #include "Coordinator.h"
 
 Coordinator::Coordinator()
-{
-    string m_firstName = "";
-    string m_lastName = "";
-    string m_roomNo = "";
-    string m_phoneNo = "";
-    string m_emailAddress = "";
-}
+    :m_firstName(""), m_lastName(""), m_roomNo(""), m_phoneNo(""), m_emailAddress("")
+{}
 
 void Coordinator::SetFirstName(const string &fnam)
 {
@@ -17,4 +12,14 @@ void Coordinator::SetFirstName(const string &fnam)
 void Coordinator::GetFirstName(string &fnam) const
 {
     fnam = m_firstName;
+}
+
+void Coordinator::SetLastName(const string &lnam)
+{
+    m_lastName = lnam;
+}
+
+void Coordinator::GetLastName(string &lnam) const
+{
+    lnam = m_lastName;
 }
